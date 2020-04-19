@@ -244,3 +244,28 @@ a{
 	text-align: right;
 	display: inline-block;
 }
+
+
+.bd{
+	width: 1200px;
+	margin: auto;
+	overflow-y: auto;
+	position: relative;
+}
+.bd tr td{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px dotted #fff;
+}
+.bd tr td:nth-child(1),
+.bd tr td:nth-child(3){
+	width: 107px;
+	height: 26px;
+	color: #999;
+}
+.bd tr td:nth-child(2),
+.bd tr td:nth-child(4){
+	width: 285px;
+	height: 26px;
+	color: #000;
+}
