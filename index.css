@@ -1,0 +1,271 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	color: #424242;
+	text-decoration: none;
+}
+
+.app{
+	position: relative;
+	width: 100%;
+	overflow-y: auto;
+}
+.app .img{
+	position:fixed;
+ 	top: 0;
+ 	left: 0;
+ 	width:100%;
+ 	height:100%;
+ 	min-width: 1000px;
+ 	z-index:-10;
+ 	zoom: 1;
+ 	background-color: #fff;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	-webkit-background-size: cover;
+ 	-o-background-size: cover;
+ 	background-position: center 0;
+}
+.app .img img{
+	opacity: .5;
+	width: 100%;
+	height: 100%;
+}
+
+.banner{
+	position: fixed;
+	top: 0;
+	height: 82px;
+	width: auto;
+	z-index: 999;
+}
+.banner ul li{
+	float: left;
+	width: 230px;
+	height: 82px;
+	padding: 35px 20px 20px;
+	background-color: rgba(0,0,0,0.4);
+	box-sizing: border-box;
+	list-style: none;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	margin-right: 5px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.banner a{
+	float: left;
+}
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+  .banner ul li{
+    background-color:#000000;
+    filter:Alpha(opacity=50);
+    position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+  }
+  .banner ul li p{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+  }  
+}
+.banner ul li:hover{
+	padding: 0;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(100,100,100,1);
+}
+
+.box{
+	position: relative;
+	width: 100%;
+	overflow-y: auto;
+	background-color: rgba(0,0,0,0.5);
+	margin-top: 100px;
+}
+.jie,
+.ly{
+	position: relative;
+	width: 1200px;
+	overflow-y: auto;
+	color: #fff;
+	margin: auto;
+	
+}
+.jie .left{
+	width: 600px;
+	float: left;
+	height: auto;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.jie .left h2{
+	line-height: 60px;
+}
+.jie .left img{
+	width: 100%;
+	height: 500px;
+	float: left;
+	box-shadow: 0px 10px 10px -10px #5E5E5E; 
+}
+.jie .left p{
+	width: 100%;
+	line-height: 30px;
+	text-indent: 2em;
+}
+.jie .rig{
+	width: 600px;
+	padding: 20px;
+	box-sizing: border-box;
+	
+	float: left;
+}
+
+.jie .rig .cj{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	border-bottom:1px dotted #fff;
+}
+.jie .rig .cj p{
+	line-height: 30px;
+	text-indent: 2em;
+}
+.jie .rig .cj .p{
+	color: orange;
+	font-size: 18px;
+	line-height: 60px;
+	text-indent: 0em;
+}
+
+
+.jl,.zp{
+	position: relative;
+	width: 1200px;
+	overflow-y: auto;
+	color: #fff;
+	margin: auto;
+}
+.jl .left{
+	width: 100%;
+	overflow-y: auto;
+}
+.jl .left h2{
+	line-height: 60px;
+}
+.jl .left h4,
+.zp h4{
+	color: orange;
+	line-height: 35px;
+}
+.jl .left p{
+	text-indent: 2em;
+	line-height: 30px;
+}
+.jl .left div img{
+	float: left;
+	width: 598px;
+	height: 600px;
+}
+
+
+.zp h2{
+	line-height: 60px;
+}
+.zp .mod{
+	width: 100%;
+	overflow-y: auto;
+}
+.zp .mod div{
+	float: left;
+	width: 300px;
+	height: 250px;
+}
+.zp .mod div img{
+	width: 150px;
+	float: left;
+}
+.zp .mod div p{
+	float: left;
+	width: 150px;
+	line-height: 40px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.ly h2{
+	line-height: 60px;
+}
+.ly p{
+	color: orange;
+	line-height: 35px;
+}
+.ly p input{
+	width: 800px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	border: 1px solid #fff;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ly p textarea{
+	width: 800px;
+	height: 120px;
+	background-color: transparent;
+	border: none;
+	border: 1px solid #fff;
+	padding-left: 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.copyRight{
+	position: relative;
+	width: 100%;
+	height: 120px;
+	background-color: rgba(128,128,128,.6);
+}
+.copyRight .copy{
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+	background-color: rgba(222,222,222,.6);
+	padding: 15px;
+	box-sizing: border-box;
+}
+.copyRight .copy p{
+	line-height: 25px;
+}
+.copyRight .copy p span{
+	width: 100px;
+	text-align: right;
+	display: inline-block;
+}
+
+
+.bd{
+	width: 1200px;
+	margin: auto;
+	overflow-y: auto;
+	position: relative;
+}
+.bd tr td{
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px dotted #fff;
+}
+.bd tr td:nth-child(1),
+.bd tr td:nth-child(3){
+	width: 107px;
+	height: 26px;
+	color: #999;
+}
+.bd tr td:nth-child(2),
+.bd tr td:nth-child(4){
+	width: 285px;
+	height: 26px;
+	color: #000;
+}
